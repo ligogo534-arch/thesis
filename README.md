@@ -1,3 +1,7 @@
+# Research Purpose
+
+Computational text analysis of Chinese readers' reception of four works by Ueno Chizuko on Douban.
+
 ## Methods
 
 - Text preprocessing and descriptive statistics
