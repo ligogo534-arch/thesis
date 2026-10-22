@@ -1,0 +1,61 @@
+{
+  "corpus_name": "書評",
+  "csv_path": "../../data_cleaning2/text_cleaning/shuping_clean_base.csv",
+  "unit_of_analysis": "sentence_chunk",
+  "split_stats": {
+    "split_unit": "sentence_chunk",
+    "n_original_documents": 3938,
+    "n_units_before_filtering": 31784,
+    "n_units_dropped_too_short": 41,
+    "n_units_final": 31743,
+    "unit_min_chars_threshold": 2
+  },
+  "run_timestamp": "2026-08-07T12:11:16.060227",
+  "python_version": "3.9.23",
+  "os": "Windows-10-10.0.26200-SP0",
+  "library_versions": {
+    "bertopic": "0.17.3",
+    "sentence-transformers": "5.1.0",
+    "umap-learn": "0.5.4",
+    "hdbscan": "0.8.39",
+    "scikit-learn": "1.6.1",
+    "jieba": "0.42.1",
+    "gensim": "4.2.0",
+    "pandas": "2.3.1",
+    "numpy": "1.23.5",
+    "torch": "2.7.1"
+  },
+  "embedding_model": {
+    "name": "shibing624/text2vec-base-chinese",
+    "revision": "183bb99aa7af74355fb58d16edf8c13ae7c5433e"
+  },
+  "jieba_hmm_enabled": true,
+  "custom_dict_path": "../dict_stopword/output/custom_dict_template.txt",
+  "custom_dict_md5": "abf16ab7c354b86e3f172e76428af8b8",
+  "stopwords_final_path": "stopwords_final.txt",
+  "stopwords_final_md5": "dc4289dc82bb5e815febac4fb9b41c4d",
+  "umap_params": {
+    "n_neighbors": 20,
+    "random_state": 42,
+    "n_components": 5,
+    "min_dist": 0.0,
+    "metric": "cosine"
+  },
+  "hdbscan_params": {
+    "min_cluster_size": 300,
+    "prediction_data": true,
+    "metric": "euclidean",
+    "cluster_selection_method": "eom",
+    "min_samples": 20
+  },
+  "bertopic_params": {
+    "top_n_words": 10,
+    "calculate_probabilities": true,
+    "representation_model": "c-TF-IDF only (MMR not applied)"
+  },
+  "random_state": 42,
+  "n_topics_excl_outlier": 14,
+  "outlier_ratio_unit_level": 0.3703,
+  "overall_coherence_c_v": 0.752,
+  "coherence_calc_empty_docs_dropped": 6
+}
